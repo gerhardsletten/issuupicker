@@ -20,7 +20,7 @@ class issuupickerInfo
             'Version'         => '1.0',
             'Copyright'       => 'Copyright © 2012 Gerhard Sletten',
             'License'         => 'GNU General Public License v2.0',
-            'Info'            => '<a href="http://projects.ez.no/issuupicker" target="_blank">http://projects.ez.no/issuupicker</a>'
+            'Info'            => '<a href="http://www.github.com/gerhardsletten/issuupicker" target="_blank">github.com/gerhardsletten/issuupicker</a>'
         );
     }
 }
