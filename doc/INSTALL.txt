@@ -1,0 +1,23 @@
+==============================
+ IssuuPicker Installation
+==============================
+
+You must have ezjscore installed to run IssuuPicker
+
+1. Install *issuupicker* folder in *extension/*
+2. Activate the extension in an override of **site.ini**
+3. Regenerate autoloads for classes
+
+::
+
+  php bin/php/ezpgenerateautoloads.php -e -p
+
+4. Clear all Caches
+
+::
+
+  php bin/php/ezcache.php --clear-tag=ini
+  php bin/php/ezcache.php --clear-all
+
+5. Add a new IssuuPicker attribute to a content class.
+You are now ready to use IssuuPicker datatype.
