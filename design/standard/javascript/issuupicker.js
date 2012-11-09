@@ -1,5 +1,5 @@
 $(function() {
-	var issuu_template = '<div class="issuu-item" data-document-id="<%= documentId %>"><img src="http://image.issuu.com/<%= documentId %>/jpg/page_1_thumb_medium.jpg" /><strong><%= title %></strong><br />By <%= username %> <%= views %> views, <%= pagecount %> pages</div>'
+	var issuu_template = '<div class="issuu-item" data-document-id="<%= documentId %>"><img src="http://image.issuu.com/<%= documentId %>/jpg/page_1_thumb_medium.jpg" /><strong><%= title %></strong><br />By <%= username %> <%= views %> views, <%= pagecount %> pages <input type="button" class="issuu-remove-link button" value="Remove" /></div>'
 	,template = _.template(issuu_template);
 
 	$('.issuu-preview').each(function(){
@@ -41,6 +41,12 @@ $(function() {
 	    	preview_el.html(me.clone());
 	    	search_results.empty();
 	    	search_input.val("");
+	    });
+
+	    preview_el.on("click", ".issuu-item .issuu-remove-link", function(event){
+	    	event.preventDefault();
+	    	ez_input_el.val("");
+	    	preview_el.html("");
 	    });
 	});
 });
