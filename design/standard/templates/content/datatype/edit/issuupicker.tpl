@@ -6,6 +6,7 @@
 		<div class="block">
 			<label>Search issuu</label>
 			<input type="text" class="issuu-search" />
+			<a href="#" class="issuu-manuel-enter">Enter Issuu id manually</a>
 		</div>
 		<div class="issuu-search-preview"></div>
 	</div>
